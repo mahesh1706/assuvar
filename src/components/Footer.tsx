@@ -18,7 +18,7 @@ const Footer = () => {
     
     // Create WhatsApp message
     const whatsappMessage = `Hi! I'm ${formData.name}. Email: ${formData.email}. Message: ${formData.message}`;
-    const whatsappUrl = `https://wa.me/1234567890?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappUrl = `https://wa.me/916382043432?text=${encodeURIComponent(whatsappMessage)}`;
     
     // Open WhatsApp
     window.open(whatsappUrl, '_blank');
@@ -40,14 +40,14 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-black text-white py-16 w-full relative z-10">
+    <footer className="bg-black text-white py-16">
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-12">
           {/* Logo and Description */}
-          <div data-aos="fade-right" data-aos-duration="1000">
+          <div className="animate-slide-in-left">
             <div className="flex items-center mb-6">
-              <div className="w-10 h-10 bg-highlight rounded-full flex items-center justify-center mr-3">
-                <span className="text-white font-bold">DA</span>
+              <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center mr-3">
+                <span className="text-black font-bold">DA</span>
               </div>
               <span className="text-2xl font-bold">Digital Agency</span>
             </div>
@@ -57,32 +57,31 @@ const Footer = () => {
             
             {/* Social Links */}
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-highlight transition-all duration-300">
+              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-all duration-300">
                 <Instagram size={18} />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-highlight transition-all duration-300">
+              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-all duration-300">
                 <Twitter size={18} />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-highlight transition-all duration-300">
+              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-all duration-300">
                 <Linkedin size={18} />
               </a>
             </div>
           </div>
 
           {/* Quick Links */}
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <div className="animate-slide-in-left" style={{ animationDelay: '0.2s' }}>
             <h3 className="text-xl font-bold mb-6">Quick Links</h3>
             <ul className="space-y-3">
-              <li><a href="/" className="text-gray-400 hover:text-highlight transition-colors duration-300">Home</a></li>
-              <li><a href="/about" className="text-gray-400 hover:text-highlight transition-colors duration-300">About</a></li>
-              <li><a href="/services" className="text-gray-400 hover:text-highlight transition-colors duration-300">Services</a></li>
-              <li><a href="/case-study" className="text-gray-400 hover:text-highlight transition-colors duration-300">Projects</a></li>
-              <li><a href="/contact" className="text-gray-400 hover:text-highlight transition-colors duration-300">Contact</a></li>
+              <li><a href="/" className="text-gray-400 hover:text-white transition-colors duration-300">Home</a></li>
+              <li><a href="/services" className="text-gray-400 hover:text-white transition-colors duration-300">Services</a></li>
+              <li><a href="/case-study" className="text-gray-400 hover:text-white transition-colors duration-300">Projects</a></li>
+              <li><a href="/contact" className="text-gray-400 hover:text-white transition-colors duration-300">Contact</a></li>
             </ul>
           </div>
 
           {/* Contact Form */}
-          <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+          <div className="animate-slide-in-right">
             <h3 className="text-xl font-bold mb-6">Send us a message</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <Input
@@ -92,7 +91,7 @@ const Footer = () => {
                 value={formData.name}
                 onChange={handleInputChange}
                 required
-                className="bg-gray-800 border-gray-700 text-white placeholder-gray-400 focus:border-highlight"
+                className="bg-gray-800 border-gray-700 text-white placeholder-gray-400"
               />
               <Input
                 type="email"
@@ -101,7 +100,7 @@ const Footer = () => {
                 value={formData.email}
                 onChange={handleInputChange}
                 required
-                className="bg-gray-800 border-gray-700 text-white placeholder-gray-400 focus:border-highlight"
+                className="bg-gray-800 border-gray-700 text-white placeholder-gray-400"
               />
               <Textarea
                 name="message"
@@ -109,7 +108,7 @@ const Footer = () => {
                 value={formData.message}
                 onChange={handleInputChange}
                 required
-                className="bg-gray-800 border-gray-700 text-white placeholder-gray-400 focus:border-highlight"
+                className="bg-gray-800 border-gray-700 text-white placeholder-gray-400"
                 rows={4}
               />
               <Button type="submit" className="w-full bg-highlight text-white hover:bg-highlight-hover transition-all duration-300">
@@ -130,3 +129,8 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
+
+
+
