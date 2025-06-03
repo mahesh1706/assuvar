@@ -112,8 +112,29 @@ const Services = () => {
         </div>
       </section>
 
-     
-      <Footer/>
+      {/* CTA Section */}
+      <section className="py-16 bg-black text-white">
+        <div className="max-w-4xl mx-auto text-center px-4 animate-fade-in">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Get Started?</h2>
+          <p className="text-xl text-gray-300 mb-8">
+            Let's discuss your project and create something amazing together.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link to="/contact">
+              <Button size="lg" className="bg-white text-black hover:bg-gray-200 transition-all duration-300 transform hover:scale-105">
+                Start Your Project
+              </Button>
+            </Link>
+            <Link to="/case-study">
+              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105">
+                View Our Work
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
     </div>
   );
 };
