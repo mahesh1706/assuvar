@@ -27,7 +27,7 @@ Phone: ${formData.phone}
 Subject: ${formData.subject}
 Message: ${formData.message}`;
     
-    const whatsappUrl = `https://wa.me/1234567890?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappUrl = `https://wa.me/916382043432?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappUrl, '_blank');
     
     setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
