@@ -7,48 +7,54 @@ import { Link } from 'react-router-dom';
 
 const Services = () => {
   const services = [
-    {
-      icon: <Palette className="w-12 h-12" />,
-      title: "Web Design",
-      description: "Creating visually stunning and user-friendly designs that captivate your audience and enhance user experience.",
-      features: ["Responsive Design", "UI/UX Optimization", "Brand Integration", "Wireframing", "Prototyping"],
-      price: "Starting at $1,500"
-    },
-    {
+     {
       icon: <Code className="w-12 h-12" />,
       title: "Web Development",
       description: "Building robust, scalable, and high-performance websites using the latest technologies and best practices.",
-      features: ["Custom Development", "CMS Integration", "API Development", "Database Design", "Performance Optimization"],
-      price: "Starting at $2,500"
+      features: ["Custom Development", "CMS Integration", "API Development", , "Performance Optimization"],
+      
     },
+    {
+      icon: <ShoppingCart className="w-12 h-12" />,
+      title: " Shopify & E-commerce Development",
+      description: "Building powerful e-commerce platforms that drive sales and provide excellent shopping experiences.",
+      features: ["Shopping Cart Integration", "Payment Gateway Setup", "Inventory Management", "Order Processing"],
+      
+    },
+   
+
+   
     {
       icon: <Search className="w-12 h-12" />,
       title: "SEO Optimization",
       description: "Optimizing your website to rank higher in search engines and drive organic traffic to your business.",
       features: ["Keyword Research", "On-page SEO", "Technical SEO", "Link Building", "Analytics Setup"],
-      price: "Starting at $800/month"
+      
     },
     {
       icon: <Smartphone className="w-12 h-12" />,
       title: "Mobile App Design",
       description: "Designing intuitive and engaging mobile applications that provide seamless user experiences.",
       features: ["iOS/Android Design", "User Flow Design", "Interactive Prototypes", "App Store Optimization"],
-      price: "Starting at $3,000"
+   
     },
-    {
-      icon: <ShoppingCart className="w-12 h-12" />,
-      title: "E-commerce Development",
-      description: "Building powerful e-commerce platforms that drive sales and provide excellent shopping experiences.",
-      features: ["Shopping Cart Integration", "Payment Gateway Setup", "Inventory Management", "Order Processing"],
-      price: "Starting at $4,000"
-    },
+    
     {
       icon: <BarChart className="w-12 h-12" />,
       title: "Digital Marketing",
       description: "Comprehensive digital marketing strategies to boost your online presence and drive conversions.",
       features: ["Social Media Marketing", "Content Strategy", "PPC Campaigns", "Email Marketing"],
-      price: "Starting at $1,200/month"
+    
+    },
+
+     {
+      icon: <Palette className="w-12 h-12" />,
+      title: "Web Design",
+      description: "Creating visually stunning and user-friendly designs that captivate your audience and enhance user experience.",
+      features: ["Responsive Design", "UI/UX Optimization", "Brand Integration", "Wireframing", "Prototyping"],
+    
     }
+
   ];
 
   return (
@@ -96,7 +102,7 @@ const Services = () => {
                   <p className="text-lg font-semibold text-black mb-4">{service.price}</p>
                   <Link to="/contact">
                     <Button className="w-full bg-black text-white hover:bg-gray-800 transition-all duration-300">
-                      Get Started
+                      Book A Call 
                     </Button>
                   </Link>
                 </div>
@@ -106,29 +112,8 @@ const Services = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-black text-white">
-        <div className="max-w-4xl mx-auto text-center px-4 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Get Started?</h2>
-          <p className="text-xl text-gray-300 mb-8">
-            Let's discuss your project and create something amazing together.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact">
-              <Button size="lg" className="bg-white text-black hover:bg-gray-200 transition-all duration-300 transform hover:scale-105">
-                Start Your Project
-              </Button>
-            </Link>
-            <Link to="/case-study">
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105">
-                View Our Work
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <Footer />
+     
+      <Footer/>
     </div>
   );
 };

@@ -13,12 +13,12 @@ const AboutSection = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
               About Our Agency
             </h2>
-            <p className="text-gray-600 mb-8 leading-relaxed text-2xl font-bold">
-              We Don’t Just Build Projects — We Solve Real Problems.
+            <p className="text-gray-600 mb-9 leading-relaxed text-2xl font-bold">
+              We Don’t Just Build — We Solve Real Problems.
 
 <p className="text-2xl font-bold text-highlight" >We’re a passionate team of college innovators turning bold ideas into smart, scalable solutions. From custom services to user-friendly products, we design with purpose, powered by creativity and hustle.</p>
 
-Expect pro-level quality at fair prices — because great results shouldn’t break the bank. We listen. We learn.  We build 
+ Great results shouldn’t break the bank. We listen. We learn.  We build 
 
             </p>
             <p className="text-2xl font-bold text-black">
