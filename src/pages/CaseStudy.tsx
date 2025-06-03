@@ -29,28 +29,14 @@ const CaseStudy = () => {
       duration: "2 months",
       team: "3 members",
       date: "2024",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800&h=500",
+      image:{},
       description: "Modern corporate website with focus on user experience and search engine optimization.",
       challenge: "The company needed a professional website that would establish credibility and improve their online presence.",
       solution: "We created a clean, modern design with optimized content architecture and implemented comprehensive SEO strategies.",
       results: ["400% increase in organic traffic", "60% improvement in user engagement", "Top 3 ranking for target keywords"],
       technologies: ["HTML5", "CSS3", "JavaScript", "WordPress", "Google Analytics"]
     },
-    {
-      id: 3,
-      title: "SaaS Dashboard Application",
-      category: "UI/UX Design & Development",
-      client: "DataFlow Analytics",
-      duration: "4 months",
-      team: "5 members",
-      date: "2023",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=800&h=500",
-      description: "Comprehensive dashboard application for data analytics with real-time visualization and reporting features.",
-      challenge: "Creating an intuitive interface for complex data visualization that would be accessible to non-technical users.",
-      solution: "We designed a user-friendly dashboard with interactive charts, customizable widgets, and automated reporting features.",
-      results: ["85% reduction in training time", "40% increase in user productivity", "99.9% uptime reliability"],
-      technologies: ["React", "D3.js", "Python", "PostgreSQL", "Docker"]
-    }
+    
   ];
 
   return (
@@ -165,7 +151,7 @@ const CaseStudy = () => {
       </section>
 
       {/* CTA Section */}
-   
+     
 
       <Footer />
     </div>
