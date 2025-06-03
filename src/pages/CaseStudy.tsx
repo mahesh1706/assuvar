@@ -14,12 +14,13 @@ const CaseStudy = () => {
       duration: "3 months",
       team: "4 members",
       date: "2024",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800&h=500",
+       image:"https://i.postimg.cc/SsScR0mc/look-2.png",
+     
       description: "Complete redesign and development of a modern e-commerce platform with advanced features and improved user experience.",
       challenge: "The client needed a modern, scalable e-commerce solution that could handle high traffic and provide excellent user experience.",
       solution: "We built a custom e-commerce platform using React and Node.js with advanced features like real-time inventory, personalized recommendations, and seamless checkout process.",
       results: ["300% increase in conversion rate", "50% reduction in page load time", "95% user satisfaction score"],
-      technologies: ["React", "Node.js", "MongoDB", "Stripe", "AWS"]
+       technologies: ["HTML5", "CSS3", "JavaScript", "WordPress", "Google Analytics"]
     },
     {
       id: 2,
@@ -29,7 +30,7 @@ const CaseStudy = () => {
       duration: "2 months",
       team: "3 members",
       date: "2024",
-      image:{},
+      image: "https://i.postimg.cc/J0MbwvJb/look.png",
       description: "Modern corporate website with focus on user experience and search engine optimization.",
       challenge: "The company needed a professional website that would establish credibility and improve their online presence.",
       solution: "We created a clean, modern design with optimized content architecture and implemented comprehensive SEO strategies.",
