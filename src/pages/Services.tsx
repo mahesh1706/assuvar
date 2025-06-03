@@ -11,6 +11,7 @@ const Services = () => {
       icon: <Code className="w-12 h-12" />,
       title: "Web Development",
       description: "Building robust, scalable, and high-performance websites using the latest technologies and best practices.",
+      // eslint-disable-next-line no-sparse-arrays
       features: ["Custom Development", "CMS Integration", "API Development", , "Performance Optimization"],
       
     },
