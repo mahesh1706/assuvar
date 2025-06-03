@@ -165,17 +165,7 @@ const CaseStudy = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-black text-white">
-        <div className="max-w-4xl mx-auto text-center px-4 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Project?</h2>
-          <p className="text-xl text-gray-300 mb-8">
-            Let's create something amazing together. Get in touch to discuss your next project.
-          </p>
-          <Button size="lg" className="bg-white text-black hover:bg-gray-200 transition-all duration-300 transform hover:scale-105">
-            Start Your Project
-          </Button>
-        </div>
-      </section>
+   
 
       <Footer />
     </div>

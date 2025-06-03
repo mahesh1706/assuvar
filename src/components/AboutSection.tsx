@@ -1,5 +1,6 @@
 
 import { Button } from '@/components/ui/button';
+import { color } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 const AboutSection = () => {
@@ -12,15 +13,19 @@ const AboutSection = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
               About Our Agency
             </h2>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              We're a passionate team of designers and developers who believe in the power of digital innovation. 
-              With years of experience in web design, development, and SEO, we help businesses transform their 
-              online presence and achieve their goals.
+            <p className="text-gray-600 mb-9 leading-relaxed text-2xl font-bold">
+              We Don’t Just Build — We Solve Real Problems.
+
+<p className="text-2xl font-bold text-highlight" >We’re a passionate team of college innovators turning bold ideas into smart, scalable solutions. From custom services to user-friendly products, we design with purpose, powered by creativity and hustle.</p>
+
+ Great results shouldn’t break the bank. We listen. We learn.  We build 
+
             </p>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Our approach combines creativity with technical expertise to deliver solutions that not only look 
-              amazing but also perform exceptionally well.
+            <p className="text-2xl font-bold text-black">
+             Got a challenge? Let’s make it happen.
             </p>
+            <br>
+            </br>
             <Link to="/about">
               <Button size="lg" className="bg-highlight text-white hover:bg-highlight-hover transition-all duration-300 transform hover:scale-105">
                 Learn More
