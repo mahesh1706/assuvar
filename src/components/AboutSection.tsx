@@ -26,11 +26,7 @@ const AboutSection = () => {
             </p>
             <br>
             </br>
-            <Link to="/about">
-              <Button size="lg" className="bg-highlight text-white hover:bg-highlight-hover transition-all duration-300 transform hover:scale-105">
-                Learn More
-              </Button>
-            </Link>
+            
           </div>
 
           {/* Right Side - Image/Stats */}
