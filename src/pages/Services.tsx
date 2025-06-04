@@ -126,11 +126,7 @@ const Services = () => {
                 Start Your Project
               </Button>
             </Link>
-            <Link to="/case-study">
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105">
-                View Our Work
-              </Button>
-            </Link>
+           
           </div>
         </div>
       </section>
