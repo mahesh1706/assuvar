@@ -1,4 +1,3 @@
-
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
@@ -14,13 +13,13 @@ const CaseStudy = () => {
       duration: "3 months",
       team: "4 members",
       date: "2024",
-       image:"https://i.postimg.cc/SsScR0mc/look-2.png",
-     
+      image: "https://i.postimg.cc/SsScR0mc/look-2.png",
       description: "Complete redesign and development of a modern e-commerce platform with advanced features and improved user experience.",
       challenge: "The client needed a modern, scalable e-commerce solution that could handle high traffic and provide excellent user experience.",
       solution: "We built a custom e-commerce platform using React and Node.js with advanced features like real-time inventory, personalized recommendations, and seamless checkout process.",
       results: ["300% increase in conversion rate", "50% reduction in page load time", "95% user satisfaction score"],
-       technologies: ["HTML5", "CSS3", "JavaScript", "WordPress", "Google Analytics"]
+      technologies: ["HTML5", "CSS3", "JavaScript", "WordPress", "Google Analytics"],
+      link: "https://sunshinechildcare.in/"
     },
     {
       id: 2,
@@ -35,15 +34,15 @@ const CaseStudy = () => {
       challenge: "The company needed a professional website that would establish credibility and improve their online presence.",
       solution: "We created a clean, modern design with optimized content architecture and implemented comprehensive SEO strategies.",
       results: ["400% increase in organic traffic", "60% improvement in user engagement", "Top 3 ranking for target keywords"],
-      technologies: ["HTML5", "CSS3", "JavaScript", "WordPress", "Google Analytics"]
-    },
-    
+      technologies: ["HTML5", "CSS3", "JavaScript", "WordPress", "Google Analytics"],
+      link: "https://natruallookhsr.netlify.app/"
+    }
   ];
 
   return (
     <div className="font-nunito">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-6xl mx-auto px-4">
@@ -94,26 +93,26 @@ const CaseStudy = () => {
                       {project.team}
                     </span>
                   </div>
-                  
+
                   <span className="text-sm font-medium text-black bg-gray-100 px-3 py-1 rounded-full">
                     {project.category}
                   </span>
-                  
+
                   <h2 className="text-3xl font-bold text-black mt-4 mb-2">{project.title}</h2>
                   <p className="text-lg text-gray-600 mb-6">{project.description}</p>
-                  
+
                   <div className="space-y-4 mb-6">
                     <div>
                       <h3 className="font-semibold text-black mb-2">Challenge</h3>
                       <p className="text-gray-600">{project.challenge}</p>
                     </div>
-                    
+
                     <div>
                       <h3 className="font-semibold text-black mb-2">Solution</h3>
                       <p className="text-gray-600">{project.solution}</p>
                     </div>
                   </div>
-                  
+
                   <div className="mb-6">
                     <h3 className="font-semibold text-black mb-3">Results</h3>
                     <ul className="space-y-2">
@@ -125,7 +124,7 @@ const CaseStudy = () => {
                       ))}
                     </ul>
                   </div>
-                  
+
                   <div className="mb-6">
                     <h3 className="font-semibold text-black mb-3">Technologies Used</h3>
                     <div className="flex flex-wrap gap-2">
@@ -139,20 +138,19 @@ const CaseStudy = () => {
                       ))}
                     </div>
                   </div>
-                  
-                  <Button className="bg-black text-white hover:bg-gray-800 transition-all duration-300 transform hover:scale-105">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    View Live Project
-                  </Button>
+
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                    <Button className="bg-black text-white hover:bg-gray-800 transition-all duration-300 transform hover:scale-105">
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      View Live Project
+                    </Button>
+                  </a>
                 </div>
               </div>
             </div>
           ))}
         </div>
       </section>
-
-      {/* CTA Section */}
-     
 
       <Footer />
     </div>
