@@ -49,7 +49,7 @@ const Footer = () => {
               <div className="w-50 h-10 bg-gray-100 rounded-full flex items-center justify-center mr-3">
                 <img src={logo} alt="logo" className="h-8" />
               </div>
-              <span className="text-2xl font-bold">Assuvar</span>
+              <span className="text-2xl font-bold"></span>
             </div>
             <br />
             <br />

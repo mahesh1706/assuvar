@@ -183,7 +183,7 @@ Message: ${formData.message}`;
                         <Mail className="w-5 h-5 text-black mt-1 mr-3" />
                         <div>
                           <p className="font-medium text-black">Email</p>
-                          <p className="text-gray-600">assuvarcloud@gmail.com</p>
+                          <p className="text-gray-600">team@assuvar.ccom</p>
                         </div>
                       </div>
                       <div className="flex items-start">
