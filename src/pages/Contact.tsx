@@ -1,3 +1,4 @@
+
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
@@ -7,7 +8,6 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Mail, Phone, MapPin, Clock, MessageCircle } from 'lucide-react';
 import { useState } from 'react';
 import { toast } from '@/hooks/use-toast';
-import { Helmet } from 'react-helmet-async';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -69,27 +69,6 @@ Message: ${formData.message}`;
 
   return (
     <div className="font-nunito">
-      <Helmet>
-        <title>Contact Us | Assuvar – Digital Agency India</title>
-        <meta name="description" content="Contact Assuvar for web development, SEO, branding, and digital marketing services in India. Let's build your digital success together!" />
-        <meta name="keywords" content="contact assuvar, digital agency India, web development, SEO, branding, Indian startups" />
-        <link rel="canonical" href="https://assuvar.com/contact" />
-        <script type="application/ld+json">{`
-          {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Assuvar",
-            "url": "https://assuvar.com/",
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "telephone": "+91-6382043432",
-              "email": "team@assuvar.ccom",
-              "contactType": "customer support",
-              "areaServed": "IN"
-            }
-          }
-        `}</script>
-      </Helmet>
       <Navbar />
       
       {/* Hero Section */}
@@ -181,7 +160,8 @@ Message: ${formData.message}`;
                     </div>
                     
                     <Button 
-                      type="submit"
+                      type="submit" 
+                      size="lg" 
                       className="w-full bg-black text-white hover:bg-gray-800 transition-all duration-300 transform hover:scale-105"
                     >
                       <MessageCircle className="w-5 h-5 mr-2" />

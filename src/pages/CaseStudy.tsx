@@ -2,7 +2,6 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Calendar, Clock, Users } from 'lucide-react';
-import { Helmet } from 'react-helmet-async';
 
 const CaseStudy = () => {
   const projects = [
@@ -42,27 +41,6 @@ const CaseStudy = () => {
 
   return (
     <div className="font-nunito">
-      <Helmet>
-        <title>Case Studies | Assuvar – Digital Success Stories</title>
-        <meta name="description" content="See how Assuvar has helped Indian businesses grow online with web development, SEO, and digital marketing. Real case studies and results." />
-        <meta name="keywords" content="case studies, digital agency India, web development results, SEO success, Indian business growth" />
-        <link rel="canonical" href="https://assuvar.com/casestudy" />
-        <script type="application/ld+json">{`
-          {
-            "@context": "https://schema.org",
-            "@type": "CreativeWork",
-            "headline": "E-commerce Platform Redesign",
-            "about": "Complete redesign and development of a modern e-commerce platform with advanced features and improved user experience.",
-            "author": {
-              "@type": "Organization",
-              "name": "Assuvar"
-            },
-            "datePublished": "2024-01-01",
-            "url": "https://assuvar.com/casestudy",
-            "image": "https://i.postimg.cc/SsScR0mc/look-2.png"
-          }
-        `}</script>
-      </Helmet>
       <Navbar />
 
       {/* Hero Section */}

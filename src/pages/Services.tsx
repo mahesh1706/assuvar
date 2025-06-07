@@ -1,9 +1,9 @@
+
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Code, Palette, Search, Smartphone, ShoppingCart, BarChart } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 
 const Services = () => {
   const services = [
@@ -60,30 +60,6 @@ const Services = () => {
 
   return (
     <div className="font-nunito">
-      <Helmet>
-        <title>Services | Assuvar – Web Development, SEO, Branding & More</title>
-        <meta name="description" content="Explore Assuvar's digital services: web development, SEO, e-commerce, mobile app design, digital marketing, and branding for Indian businesses." />
-        <meta name="keywords" content="web development India, SEO services India, e-commerce development, digital marketing India, branding India, mobile app design India" />
-        <link rel="canonical" href="https://assuvar.com/services" />
-        <script type="application/ld+json">{`
-          {
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "serviceType": "Web Development",
-            "provider": {
-              "@type": "Organization",
-              "name": "Assuvar",
-              "url": "https://assuvar.com/"
-            },
-            "areaServed": "India",
-            "description": "Building robust, scalable, and high-performance websites for Indian businesses.",
-            "brand": {
-              "@type": "Brand",
-              "name": "Assuvar"
-            }
-          }
-        `}</script>
-      </Helmet>
       <Navbar />
       
       {/* Hero Section */}
@@ -124,8 +100,9 @@ const Services = () => {
                 </ul>
                 
                 <div className="border-t border-gray-200 pt-6">
+                  <p className="text-lg font-semibold text-black mb-4">{service.price}</p>
                   <Link to="/contact">
-                    <Button className="bg-white text-black hover:bg-gray-200 transition-all duration-300 transform hover:scale-105">
+                    <Button className="w-full bg-black text-white hover:bg-gray-800 transition-all duration-300">
                       Book A Call 
                     </Button>
                   </Link>
@@ -145,7 +122,7 @@ const Services = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
-              <Button className="bg-white text-black hover:bg-gray-200 transition-all duration-300 transform hover:scale-105">
+              <Button size="lg" className="bg-white text-black hover:bg-gray-200 transition-all duration-300 transform hover:scale-105">
                 Start Your Project
               </Button>
             </Link>

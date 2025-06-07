@@ -1,9 +1,9 @@
+
 import { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Award, Users, Clock, Target } from 'lucide-react';
-import { Helmet } from 'react-helmet-async';
 
 const About = () => {
   useEffect(() => {
@@ -29,27 +29,6 @@ const About = () => {
 
   return (
     <div className="font-nunito">
-      <Helmet>
-        <title>About Us | Assuvar – Digital Agency India</title>
-        <meta name="description" content="Learn about Assuvar, a digital agency in India specializing in web development, SEO, branding, and digital marketing for startups and local businesses." />
-        <meta name="keywords" content="about assuvar, digital agency India, web development, SEO, branding, Indian startups" />
-        <link rel="canonical" href="https://assuvar.com/about" />
-        <script type="application/ld+json">{`
-          {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Assuvar",
-            "url": "https://assuvar.com/",
-            "logo": "/public/title.jpeg",
-            "description": "Full-service digital agency in India for web development, SEO, branding, and digital marketing.",
-            "sameAs": [
-              "https://www.instagram.com/assuvarcloud/",
-              "https://www.linkedin.com/company/assuvar/",
-              "https://x.com/assuvarcloud"
-            ]
-          }
-        `}</script>
-      </Helmet>
       <Navbar />
       
       {/* Hero Section */}
@@ -119,7 +98,7 @@ const About = () => {
                 </div>
               </div>
 
-              <Button className="bg-highlight text-white hover:bg-highlight-hover">
+              <Button size="lg" className="bg-highlight text-white hover:bg-highlight-hover">
                 View Portfolio
               </Button>
             </div>
