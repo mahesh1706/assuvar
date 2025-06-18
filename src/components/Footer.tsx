@@ -99,6 +99,7 @@ const Footer = () => {
                   Home
                 </a>
               </li>
+              
               <li>
                 <a href="/services" className="text-gray-600 hover:text-indigo-600 transition-colors duration-300">
                   Services
@@ -107,6 +108,11 @@ const Footer = () => {
               <li>
                 <a href="/case-study" className="text-gray-600 hover:text-indigo-600 transition-colors duration-300">
                   Projects
+                </a>
+              </li>
+              <li>
+                <a href="/Portfolio" className="text-gray-600 hover:text-indigo-600 transition-colors duration-300">
+                  Portfolio
                 </a>
               </li>
               <li>
