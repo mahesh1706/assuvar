@@ -46,7 +46,7 @@ const CaseStudy = () => {
       technologies: ["TailwindCSS", "HTML", "CSS", "JavaScript", "React"],
       link: "https://rhythmos.in/"
     },
-       {
+    {
       id: 4,
       title: "Luxury Living Redefined",
       category: "Web Development",
@@ -56,16 +56,15 @@ const CaseStudy = () => {
       date: "2024",
       image: "https://i.postimg.cc/rsw-SHGZC/image.png",
       description: "Experience premium comfort, state-of-the-art amenities, and a vibrant community that feels like home. Your perfect living space awaits!",
-      technologies: ["HTML",, "CSS", "JavaScript"],
+      technologies: ["HTML", "CSS", "JavaScript"],
       link: "https://postimg.cc/Vr2rrt8d"
-    },
-    // ...other projects
+    }
   ];
 
   const productProjects = [
     {
       id: 1,
-      title: "Free Learning,Easy Access",
+      title: "Free Learning, Easy Access",
       category: "Product Design & Development",
       client: "FinTech Solutions",
       duration: "1 week",
@@ -76,9 +75,9 @@ const CaseStudy = () => {
       technologies: ["React Native", "Node.js", "MongoDB", "Firebase"],
       link: "https://zynko.netlify.app/pages/landingpage.html"
     },
-     {
+    {
       id: 2,
-      title: "Free Learning,Easy Access",
+      title: "Free Learning, Easy Access",
       category: "Product Design & Development",
       client: "FinTech Solutions",
       duration: "2 months",
@@ -89,9 +88,9 @@ const CaseStudy = () => {
       technologies: ["React Native", "Node.js", "MongoDB", "Firebase"],
       link: "https://zynko.netlify.app/pages/landingpage.html"
     },
-     {
+    {
       id: 3,
-      title: "Free Learning,Easy Access",
+      title: "Free Learning, Easy Access",
       category: "Product Design & Development",
       client: "FinTech Solutions",
       duration: "6 months",
@@ -101,40 +100,28 @@ const CaseStudy = () => {
       description: "Learn smarter, explore limitless possibilities, and shape your future with the power of modern education! 📚💡",
       technologies: ["React Native", "Node.js", "MongoDB", "Firebase"],
       link: "https://zynko.netlify.app/pages/landingpage.html"
-    },
-    // ...other product projects
+    }
   ];
 
   const ProjectCard = ({ project }: { project: any }) => (
-    <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-2000 transform hover:scale-105 overflow-hidden">
+    <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-105 overflow-hidden">
       <div className="relative group">
         <img
           src={project.image}
           alt={project.title}
-          className="w-full h-48 object-cover transition-transform duration-2000 group-hover:scale-110"
+          className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-2000"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-500"></div>
       </div>
 
       <div className="p-6">
         <div className="flex items-center gap-4 mb-3 text-sm text-gray-500">
-          <span className="flex items-center gap-1">
-            <Calendar className="w-4 h-4" />
-            {project.date}
-          </span>
-          <span className="flex items-center gap-1">
-            <Clock className="w-4 h-4" />
-            {project.duration}
-          </span>
-          <span className="flex items-center gap-1">
-            <Users className="w-4 h-4" />
-            {project.team}
-          </span>
+          <span className="flex items-center gap-1"><Calendar className="w-4 h-4" />{project.date}</span>
+          <span className="flex items-center gap-1"><Clock className="w-4 h-4" />{project.duration}</span>
+          <span className="flex items-center gap-1"><Users className="w-4 h-4" />{project.team}</span>
         </div>
 
-        <span className="text-sm font-medium text-black bg-gray-100 px-3 py-1 rounded-full">
-          {project.category}
-        </span>
+        <span className="text-sm font-medium text-black bg-gray-100 px-3 py-1 rounded-full">{project.category}</span>
 
         <h3 className="text-xl font-bold text-black mt-3 mb-2">{project.title}</h3>
         <p className="text-gray-600 mb-4 line-clamp-3">{project.description}</p>
@@ -143,23 +130,13 @@ const CaseStudy = () => {
           <h4 className="font-semibold text-black mb-2">Technologies</h4>
           <div className="flex flex-wrap gap-2">
             {project.technologies.map((tech: string, index: number) => (
-              <span
-                key={index}
-                className="text-xs bg-black text-white px-2 py-1 rounded-full"
-              >
-                {tech}
-              </span>
+              <span key={index} className="text-xs bg-black text-white px-2 py-1 rounded-full">{tech}</span>
             ))}
           </div>
         </div>
 
         {project.link && (
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block mt-4"
-          >
+          <a href={project.link} target="_blank" rel="noopener noreferrer" className="block mt-4">
             <Button className="w-full bg-black text-white hover:bg-gray-800 transition-all duration-300">
               <ExternalLink className="w-4 h-4 mr-2" />
               View Project
@@ -178,7 +155,7 @@ const CaseStudy = () => {
 
       const interval = setInterval(() => {
         api.scrollNext();
-      }, 2000);
+      }, 2000); // Scroll every 5 seconds
 
       return () => clearInterval(interval);
     }, [api]);
@@ -197,9 +174,7 @@ const CaseStudy = () => {
             opts={{
               align: "start",
               loop: true,
-              duration: 2000,
-              dragFree: true,
-              containScroll: false,
+              dragFree: false, // disable fast continuous scrolling
             }}
           >
             <CarouselContent className="-ml-2 md:-ml-4">
@@ -235,7 +210,7 @@ const CaseStudy = () => {
       </section>
 
       <div className="bg-white">
-        <AutoCarousel 
+        <AutoCarousel
           projects={webProjects}
           title="Web Projects"
           description="Comprehensive web solutions from design to deployment"
@@ -243,7 +218,7 @@ const CaseStudy = () => {
       </div>
 
       <div className="bg-gray-50">
-        <AutoCarousel 
+        <AutoCarousel
           projects={productProjects}
           title="Product Projects"
           description="End-to-end product development and innovative solutions"
