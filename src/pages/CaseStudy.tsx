@@ -21,19 +21,6 @@ const CaseStudy = () => {
       link: "https://sunshinechildcare.in/"
     },
     {
-      id: 2,
-      title: "Corporate Website Redesign",
-      category: "Web Design & SEO",
-      client: "Global Innovations Inc",
-      duration: "2 months",
-      team: "3 members",
-      date: "2024",
-      image: "https://i.postimg.cc/J0MbwvJb/look.png",
-      description: "Modern corporate website with focus on user experience and search engine optimization.",
-      technologies: ["HTML5", "CSS3", "JavaScript", "WordPress", "Google Analytics"],
-      link: "https://example.com/corporate"
-    },
-    {
       id: 3,
       title: "Why We're Doing This",
       category: "Web Development",
@@ -57,7 +44,7 @@ const CaseStudy = () => {
       image: "https://i.postimg.cc/rsw-SHGZC/image.png",
       description: "Experience premium comfort, state-of-the-art amenities, and a vibrant community that feels like home. Your perfect living space awaits!",
       technologies: ["HTML", "CSS", "JavaScript"],
-      link: "https://postimg.cc/Vr2rrt8d"
+      link: "https://sncluxuriouspg.in/"
     }
   ];
 
