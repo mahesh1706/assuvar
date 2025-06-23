@@ -5,79 +5,47 @@ import Footer from "@/components/Footer";
 const portfolioProjects = [
   {
     id: 1,
-    name: "John Doe",
-    role: "Frontend Developer",
-    location: "Bangalore",
+    name: "MANJUNATH",
+    role: "Web Developer",
+    location: "Hosur, Bangalore",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet.",
-    image: "https://i.postimg.cc/5tM6ZzMp/character.png",
+      "I'm a passionate Web Developer and a 3rd-year Computer Science student with a strong interest in creating user-friendly digital experiences. Alongside my development skills, I also specialize in UI Design, blending functionality with clean and modern aesthetics. I enjoy building responsive websites and applications that not only work smoothly but also look great. Always eager to learn and grow, I'm continuously exploring new technologies to enhance my craft and contribute to impactful projects.",
+    image: "https://i.ibb.co/Vc6QQxT5/manjunath.png",
     socials: [
-      { icon: "✖️", label: "@profile" },
-      { icon: "🌐", label: "domain.abc" },
-      { icon: "📸", label: "@profile" },
-      { icon: "💼", label: "username" },
+      {
+        icon: "🔗",
+        label: "Portfolio",
+        link: "https://manjunath1326.netlify.app/",
+      },
+      {
+        icon: "📧",
+        label: "manjunaths5262@gmail.com",
+        link: "mailto:manjunaths5262@gmail.com",
+      },
+      {
+        icon: (
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+            width="16"
+            alt="LinkedIn"
+          />
+        ),
+        label: "LinkedIn",
+        link: "https://www.linkedin.com/in/manjunaths1326/",
+      },
+      // You can uncomment and extend more social links here
+      // {
+      //   icon: "🖼️",
+      //   label: "Instagram",
+      //   link: "https://instagram.com/yourprofile",
+      // },
+      // {
+      //   icon: "❌",
+      //   label: "X (Twitter)",
+      //   link: "https://x.com/yourhandle",
+      // },
     ],
   },
-    {
-    id: 1,
-    name: "John Doe",
-    role: "Frontend Developer",
-    location: "Bangalore",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet.",
-    image: "https://i.postimg.cc/5tM6ZzMp/character.png",
-    socials: [
-      { icon: "✖️", label: "@profile" },
-      { icon: "🌐", label: "domain.abc" },
-      { icon: "📸", label: "@profile" },
-      { icon: "💼", label: "username" },
-    ],
-  },
-    {
-    id: 1,
-    name: "John Doe",
-    role: "Frontend Developer",
-    location: "Bangalore",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet.",
-    image: "https://i.postimg.cc/5tM6ZzMp/character.png",
-    socials: [
-      { icon: "✖️", label: "@profile" },
-      { icon: "🌐", label: "domain.abc" },
-      { icon: "📸", label: "@profile" },
-      { icon: "💼", label: "username" },
-    ],
-  },
-    {
-    id: 1,
-    name: "John Doe",
-    role: "Frontend Developer",
-    location: "Bangalore",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet.",
-    image: "https://i.postimg.cc/5tM6ZzMp/character.png",
-    socials: [
-      { icon: "✖️", label: "@profile" },
-      { icon: "🌐", label: "domain.abc" },
-      { icon: "📸", label: "@profile" },
-      { icon: "💼", label: "username" },
-    ],
-  },
-    {
-    id: 1,
-    name: "John Doe",
-    role: "Frontend Developer",
-    location: "Bangalore",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet.",
-    image: "https://i.postimg.cc/5tM6ZzMp/character.png",
-    socials: [
-      { icon: "✖️", label: "@profile" },
-      { icon: "🌐", label: "domain.abc" },
-      { icon: "📸", label: "@profile" },
-      { icon: "💼", label: "username" },
-    ],
-  }
 ];
 
 const FullscreenOverlay = ({ project, onClose }: any) => {
@@ -108,7 +76,9 @@ const FullscreenOverlay = ({ project, onClose }: any) => {
             {project.socials.map((s: any, index: number) => (
               <a
                 key={index}
-                href="#"
+                href={s.link || "#"}
+                target={s.link ? "_blank" : undefined}
+                rel={s.link ? "noopener noreferrer" : undefined}
                 className="flex items-center gap-2 text-black hover:text-purple-600"
               >
                 <span className="text-xl">{s.icon}</span> {s.label}
@@ -141,7 +111,8 @@ const PortfolioPage = () => {
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-4">Portfolio</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            A showcase of my work in web and app development, design, and product innovation.
+            A showcase of my work in web and app development, design, and
+            product innovation.
           </p>
         </div>
       </section>
