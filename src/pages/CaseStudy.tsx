@@ -20,6 +20,7 @@ const CaseStudy = () => {
       technologies: ["React", "Node.js", "MongoDB", "Stripe", "AWS"],
       link: "https://sunshinechildcare.in/"
     },
+
     {
       id: 3,
       title: "Why We're Doing This",
