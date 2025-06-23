@@ -46,6 +46,51 @@ const portfolioProjects = [
       // },
     ],
   },
+
+    {
+    id: 1,
+    name: "MANJUNATH",
+    role: "Web Developer",
+    location: "Hosur, Bangalore",
+    description:
+      "I'm a passionate Web Developer and a 3rd-year Computer Science student with a strong interest in creating user-friendly digital experiences. Alongside my development skills, I also specialize in UI Design, blending functionality with clean and modern aesthetics. I enjoy building responsive websites and applications that not only work smoothly but also look great. Always eager to learn and grow, I'm continuously exploring new technologies to enhance my craft and contribute to impactful projects.",
+    image: "https://i.ibb.co/Vc6QQxT5/manjunath.png",
+    socials: [
+      {
+        icon: "🔗",
+        label: "Portfolio",
+        link: "https://manjunath1326.netlify.app/",
+      },
+      {
+        icon: "📧",
+        label: "manjunaths5262@gmail.com",
+        link: "mailto:manjunaths5262@gmail.com",
+      },
+      {
+        icon: (
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+            width="16"
+            alt="LinkedIn"
+          />
+        ),
+        label: "LinkedIn",
+        link: "https://www.linkedin.com/in/manjunaths1326/",
+      },
+      // You can uncomment and extend more social links here
+      // {
+      //   icon: "🖼️",
+      //   label: "Instagram",
+      //   link: "https://instagram.com/yourprofile",
+      // },
+      // {
+      //   icon: "❌",
+      //   label: "X (Twitter)",
+      //   link: "https://x.com/yourhandle",
+      // },
+    ],
+  },
+  
 ];
 
 const FullscreenOverlay = ({ project, onClose }: any) => {
