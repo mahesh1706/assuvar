@@ -156,7 +156,7 @@ const portfolioProjects = [
     location: "Hosur, Bangalore",
     description:
       "A self-taught web and graphic designer whorns wild ideas and emotions into clean,aesthetic visuals. Whether it’s UI/UX orposters—I focus on visuals that feel alive. I love experimenting with color, balance, and vibes..",
-    image: "https://i.ibb.co/rGt5tCRB/farhan.pnghttps://i.ibb.co/8nX83y4r/Whats-App-Image-2025-06-26-at-21-51-25-33e474bf.jpg",
+    image: "https://i.ibb.co/8nX83y4r/Whats-App-Image-2025-06-26-at-21-51-25-33e474bf.jpg",
     socials: [
       {
         icon: "📧",
