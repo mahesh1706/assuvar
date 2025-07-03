@@ -99,15 +99,15 @@ const Footer = () => {
                   Home
                 </a>
               </li>
+              <li>
+                <a href="/Case-Study" className="text-gray-600 hover:text-indigo-600 transition-colors duration-300">
+                  Case-Study
+                </a>
+              </li>
               
               <li>
                 <a href="/services" className="text-gray-600 hover:text-indigo-600 transition-colors duration-300">
                   Services
-                </a>
-              </li>
-              <li>
-                <a href="/case-study" className="text-gray-600 hover:text-indigo-600 transition-colors duration-300">
-                  Projects
                 </a>
               </li>
               <li>
