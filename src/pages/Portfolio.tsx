@@ -6,7 +6,7 @@ const portfolioProjects = [
    {
     id: 1,
 
-    name: "MAHESHWARAN",
+    name: "MAHESHWARAN M",
     role: "Founder",
     location: "Hosur, Bangalore",
     description:
